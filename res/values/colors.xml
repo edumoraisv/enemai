@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#A543C9</color>
+    <color name="colorPrimaryDark">#A543C9</color>
+    <color name="colorAccent">#A543C9</color>
+    <color name="branco">#FFFFFF</color>
+    <color name="contado_cor">#994DC4</color>
+    <color name="descricao_cor">#3D3B3B</color>
+    <color name="preto">#000000</color>
+</resources>

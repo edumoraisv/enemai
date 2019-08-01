@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Enemai</string>
+    <string name="permissao_inicio">SEJA BEM-VINDO!</string>
+    <string name="compartilhamentos">Cliques no seu \n código</string>
+    <string name="inicio_contado">0</string>
+    <string name="descricao">Faça 5 amigos clicarem no seu link, ou compre o acesso.</string>
+    <string name="bt_compartilhar">COMPARTILHAR</string>
+    <string name="bt_comprar">Compre seu acesso</string>
+    <string name="link">...</string>
+    <string name="introducao">Os temas \n serão liberados gradativamente. \n Fique Alerta!</string>
+    <string name="concluir">Concluir</string>
+    <string name="termo">Aceite \n os termos de \n uso</string>
+    <string name="link_termos">Leia os termos \n https://basenove.com/enemai/termos/</string>
+    <string name="bt_termos">ACEITO</string>
+    <string name="appConteudo">Conteúdos exclusivos serão disponibilizados para você estudar, treinar e conquistar sua nota 1000. Exemplos de redações relacionado com o tema, avaliação de sua redação e estatísticas para avaliar seu desempenho. A forma mais fácil de conquistar sua nota 1000!</string>
+</resources>

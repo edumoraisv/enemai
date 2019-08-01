@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/branco"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="com.enemai.permissao"
+        android:layout_marginTop="0dp">
+
+        <TextView
+            android:id="@+id/permissao_titulo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:gravity="center"
+            android:text="@string/permissao_inicio"
+            android:textColor="@color/colorPrimary"
+            android:textColorLink="@color/colorPrimary"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/descricao"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/descricao"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="111dp"
+            android:layout_marginLeft="111dp"
+            android:layout_marginEnd="111dp"
+            android:layout_marginRight="111dp"
+            android:layout_marginBottom="14dp"
+            android:gravity="center"
+            android:text="@string/descricao"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorPrimary"
+            android:textColorLink="@color/colorPrimary"
+            app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/permissao_titulo" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="106dp"
+            android:layout_marginLeft="106dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="106dp"
+            android:layout_marginRight="106dp"
+
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/cicle"
+            app:layout_constraintBottom_toTopOf="@+id/linkAcesso"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/descricao">
+
+
+            <TextView
+                android:id="@+id/permissao_comp_contador"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="@string/inicio_contado"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/contado_cor"
+                android:textColorLink="@color/contado_cor"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/permissao_comp_titulo"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/permissao_comp_contador"
+                android:layout_marginTop="-1dp"
+                android:gravity="center"
+                android:text="@string/compartilhamentos"
+                android:textSize="8sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/linkAcesso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="21dp"
+            android:clickable="false"
+            android:drawableLeft="?attr/actionModeCopyDrawable"
+            android:editable="false"
+            android:ems="10"
+            android:focusable="false"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:text="@string/link"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/preto"
+            android:textColorLink="@color/preto"
+            app:layout_constraintBottom_toTopOf="@+id/bt_compartilhar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+        <Button
+            android:id="@+id/bt_compartilhar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/bt_gradient"
+            android:drawableLeft="@drawable/ic_share_black_24dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/bt_compartilhar"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/branco"
+            android:textColorLink="@color/branco"
+            app:layout_constraintBottom_toTopOf="@+id/bt_comprar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linkAcesso" />
+
+        <Button
+            android:id="@+id/bt_comprar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bt_gradient"
+            android:drawableLeft="@drawable/ic_shopping_cart_black_24dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/bt_comprar"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/branco"
+            android:textColorLink="@color/branco"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bt_compartilhar"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>
